@@ -91,7 +91,7 @@ Sidebar heading:  22px 'Outfit', sans-serif
 :root {
 	--font-default: 'Outfit', sans-serif;
 	/* --font-secondary: 'Shadows Into Light Two', cursive; */
-	--fontawesome: "Font Awesome 5 Pro";
+	--fontawesome: "Font Awesome 5 Free";
 	--black: #000000;
 	--dark: #1f4e3d;
 	--dark-secondary: #1F1E17;
@@ -355,10 +355,13 @@ p {
 	max-width: 1400px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 	.container-full {
 		max-width: 540px;
 		width: 100%;
+	}
+	.attr-nav>ul>li>a i{
+		display: block;
 	}
 }
 
@@ -646,7 +649,7 @@ p {
 
 .default-padding-top {
 	padding-top: 70px;
-	padding-bottom: 90px;
+	padding-bottom: 70px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -941,9 +944,9 @@ p {
 .video-play-button i {
 	display: inline-block;
 	background: #32421f;
-	height: 100px;
-	width: 100px;
-	line-height: 100px;
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
 	text-align: center;
 	border-radius: 50%;
 	color: #ffffff;
@@ -1922,7 +1925,7 @@ button::after {
 	height: 150px;
 	width: 115%;
 	z-index: -1;
-	background-color: #384a24;
+	/* background-color: #384a24; */
 	-webkit-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 	-webkit-transform: translateY(-45%) skew(25deg) scale(0);
@@ -2771,7 +2774,7 @@ a.btn-round-animation.dark {
 
 .item-flex li i {
 	margin-right: 10px;
-	font-weight: 100;
+	/* font-weight: 100; */
 	font-size: 20px;
 	color: #87a952;
 }
@@ -3136,7 +3139,7 @@ a.btn-round-animation.dark {
 	z-index: 1;
 	display: block;
 	content: "\f00d";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 100;
 	color: var(--white);
 }
@@ -3770,7 +3773,7 @@ a.btn-round-animation.dark {
 }
 
 .banner-area.navigation-custom-large .swiper-button-prev::after {
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	content: "\f104";
 	font-weight: 100;
 	font-size: 30px;
@@ -3793,7 +3796,7 @@ a.btn-round-animation.dark {
 }
 
 .banner-area.navigation-custom-large .swiper-button-next::after {
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	content: "\f105";
 	font-weight: 100;
 	font-size: 30px;
@@ -4609,7 +4612,7 @@ h2.mask-text.large {
 	left: 0;
 	top: 1px;
 	content: "\f00c";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	color: #364523;
 	font-weight: 500;
 }
@@ -4823,7 +4826,7 @@ h2.mask-text.large {
 	top: 50%;
 	content: "\f061";
 	border-radius: 50%;
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 500;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -5029,7 +5032,7 @@ ul.list-standard {
 	left: 0;
 	top: 7px;
 	content: "\f00c";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-size: 15px;
 	font-weight: 500;
 	text-align: center;
@@ -5807,29 +5810,32 @@ ul.list-details li p {
 }
 
 ul.list-simple li {
-	margin-top: 40px;
+	margin-top: 20px;
+	
 	position: relative;
 	z-index: 1;
 	padding-left: 45px;
 }
-
+ul.list-simple li h4{
+	margin-bottom: 6px;
+}
 ul.list-simple li:first-child {
 	margin-top: 0;
 }
 
 ul.list-simple li::after {
 	position: absolute;
-	left: 0;
-	top: 3px;
-	height: 26px;
-	width: 26px;
-	content: "\f00c";
-	font-family: "Font Awesome 5 Pro";
-	text-align: center;
-	border-radius: 50%;
-	background: #364523;
-	color: var(--white);
-	line-height: 27px;
+    left: 17px;
+    top: 9px;
+    height: 12px;
+    width: 11px;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+    border-radius: 50%;
+    background: #ffffff;
+    color: var(--white);
+    line-height: 27px;
 }
 
 ul.list-simple li p {
@@ -6003,7 +6009,7 @@ ul.list-item li::after {
 	left: 0;
 	top: 7px;
 	content: "\f00c";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	height: 23px;
 	width: 23px;
 	text-align: center;
@@ -6442,9 +6448,9 @@ ul.list-item li::after {
 }
 
 .faq-style-one button.accordion-button::after {
-	background: transparent;
-	content: "\f067";
-	font-family: "Font Awesome 5 Pro";
+	/* background: transparent; */
+	/* content: "\f067"; */
+	/* font-family: "Font Awesome 5 Free"; */
 	font-weight: 100;
 	font-size: 17px;
 	position: absolute;
@@ -6458,7 +6464,7 @@ ul.list-item li::after {
 .faq-style-one button.accordion-button:not(.collapsed)::after {
 	-webkit-transform: inherit;
 	transform: inherit;
-	content: "\f068";
+	/* content: "\f068"; */
 }
 
 .faq-style-one button.accordion-button:focus {
@@ -6602,6 +6608,7 @@ ul.list-item li::after {
 	padding: 80px 50px;
 	position: relative;
 	background: var(--white);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 9px;
 }
 
 .contact-form-style-one img {
@@ -6799,7 +6806,7 @@ img.loader {
 	left: 0;
 	top: 0;
 	content: "\f058";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	color: #364523;
 	font-weight: 100;
 }
@@ -7205,7 +7212,7 @@ img.loader {
 	top: 50%;
 	content: "";
 	left: 50%;
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	text-align: center;
 	color: var(--color-heading);
 	transform: translate(-50%, -50%);
@@ -7553,7 +7560,7 @@ ul.product-features li:last-child {
 	content: "";
 	height: 100%;
 	width: 100%;
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	text-align: center;
 	color: var(--white);
 }
@@ -8740,6 +8747,11 @@ footer {
 	.img2{
 		order: 1;
 	}
+	.attr-nav>ul>li>a i{
+		display: block;
+		color: #060606;
+        font-size: 22px;
+	}
 }
 @media only screen and (max-width: 767px) {
 
@@ -9831,4 +9843,12 @@ footer {
 }
 .team-style-one-area{
 	padding-top: 80px;
+}
+.attr-nav .mob-btnc{
+	display: none !important;
+}
+@media screen and (max-width: 500px) {
+	.attr-nav .mob-btnc{
+		display: block!important;
+	}
 }

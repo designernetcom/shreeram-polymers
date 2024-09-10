@@ -223,7 +223,7 @@ span.onsale.theme {
 	right: 0;
 	top: 0;
 	content: "";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	height: 40px;
 	width: 40px;
 	line-height: 40px;
@@ -460,7 +460,7 @@ span.onsale.theme {
 	width: 80px;
 	height: 22px;
 	line-height: 22px;
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	display: block;
 	font-weight: 700;
 	font-size: 12px;
@@ -797,7 +797,7 @@ nav.woocommerce-pagination {
 	left: 15px;
 	top: 12px;
 	content: "\f058";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 600;
 	color: #364523;
 	line-height: normal;
@@ -934,7 +934,7 @@ ins {
 	left: 15px;
 	top: 9px;
 	content: "\f058";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 600;
 	color: #364523;
 	line-height: normal;
@@ -945,7 +945,7 @@ ins {
 	left: 15px;
 	top: 9px;
 	content: "\f057";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 600;
 	color: #364523;
 	line-height: normal;
@@ -1226,7 +1226,7 @@ p.stock.in-stock {
 	left: 0;
 	top: 0;
 	content: "\f00c";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 400;
@@ -1335,7 +1335,7 @@ p.stock.in-stock {
 	position: absolute;
 	left: 0;
 	top: 0;
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	height: 100%;
 	width: 100%;
 	text-indent: 0;
@@ -1751,7 +1751,7 @@ table.variations .nice-select {
 	left: 15px;
 	top: 50%;
 	content: "\f77f";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 300;
 	font-size: 25px;
 	transform: translateY(-50%);
@@ -2084,7 +2084,7 @@ strong {
 	left: 20px;
 	top: 50%;
 	content: "\f06b";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 600;
 	display: inline;
 	transform: translateY(-50%);
@@ -2330,7 +2330,7 @@ form.checkout.woocommerce-checkout table strong {
 	left: 15px;
 	top: 20px;
 	content: "";
-	font-family: "Font Awesome 5 Pro";
+	font-family: "Font Awesome 5 Free";
 	font-weight: 400;
 	color: #364523;
 	font-size: 20px;
