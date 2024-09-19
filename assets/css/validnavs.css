@@ -572,7 +572,7 @@ nav.navbar.validnavs .navbar-toggle::after {
 
 nav.navbar.validnavs .navbar-toggle i {
 	/* font-weight: 300; */
-	color:#000;
+	color:#000 !important;
 }
 
 nav.navbar.validnavs ul.nav .dropdown-menu .dropdown-menu {
@@ -2790,9 +2790,9 @@ ul.simple-menu-list > li i {
 
 	nav.navbar.validnavs ul.nav li.dropdown ul.dropdown-menu>li>a {
 		border-bottom: 1px solid #e0e0e0;
-		color: var(--color-heading);
+		color: #29361a;
 		display: block;
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: 600;
 		padding: 10px 0;
 		text-transform: capitalize;
@@ -3439,7 +3439,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button {
 }
 
 nav.navbar.validnavs .navbar-collapse.collapse button i {
-	font-weight: 400;
+	/* font-weight: 400; */
 	font-size: 15px;
 	margin: 0;
 }
