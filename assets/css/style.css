@@ -8761,6 +8761,9 @@ footer {
 		color: #060606;
         font-size: 22px;
 	}
+	.choose-us-style-two-content{
+		padding-left: 40px;
+	}
 }
 @media only screen and (max-width: 767px) {
 
