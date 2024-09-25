@@ -1,10 +1,4 @@
-/* ===================================================================
-    
-    Author          : Valid Theme
-    Template Name   : Agrica - Organic Farm Agriculture Template
-    Version         : 1.0
-    
-* ================================================================= */
+
 (function($) {
 	"use strict";
 
@@ -241,6 +235,7 @@
 			loop: true,
 			autoplay: true,
 			effect: "fade",
+			slidesPerView: 2,
 			fadeEffect: {
 				crossFade: true
 			},
@@ -571,3 +566,39 @@
 	loader();
 
 })(jQuery); // End jQuery
+
+
+$('.contact-btn').bind('click', function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('.contact-form').animate({
+        right: '-450px'
+      });
+    } else {
+      $('.contact-form').animate({
+        right: '0'
+      });
+      $(this).addClass('active');
+    }
+  });
+  $('.close-btn').bind('click', function () {
+    $('.contact-form').animate({
+      right: '-450px'
+    });
+  });
+
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }

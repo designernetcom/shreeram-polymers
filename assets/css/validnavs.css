@@ -248,7 +248,7 @@ Version: 1.0
 }
 
 .navbar .attr-right .attr-nav li a {
-	padding: 26px 0;
+	padding: 0px 0;
 	display: block;
 }
 
@@ -698,7 +698,7 @@ nav.validnavs.navbar-full .navbar-collapse ul.nav {
 
 .attr-nav>ul>li>a i {
 	font-size: 28px;
-	color: #000;
+	color: #e30000;
 }
 
 .attr-nav>ul>li>a span.badge {
