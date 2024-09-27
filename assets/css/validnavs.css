@@ -262,6 +262,11 @@ Version: 1.0
 	margin-left: 5px;
 	border: 2px solid #32421f;
 }
+.navbar .attr-right .attr-nav li.button i {
+	
+	font-size: 18px;
+	
+}
 
 .navbar .attr-right .attr-nav li.button.secondary a {
 	background: #364523 !important;
@@ -3157,7 +3162,7 @@ ul.simple-menu-list > li i {
 
 @media (min-width: 1024px) {
 	nav.navbar ul.nav>li>a {
-		padding: 30px 15px;
+		padding: 30px 9px;
 		font-weight: 600;
 		font-size: 18px;
 		text-transform: capitalize;

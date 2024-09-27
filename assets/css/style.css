@@ -96,7 +96,7 @@ Sidebar heading:  22px 'Outfit', sans-serif
 	--dark: #1f4e3d;
 	--dark-secondary: #1F1E17;
 	--white: #ffffff;
-	--color-secondary: #49a760;
+	--color-secondary: #32421f;
 	--color-primary: #f7c35f;
 	--color-heading: #04000b;
 	--color-paragraph: #666666;
@@ -104,7 +104,7 @@ Sidebar heading:  22px 'Outfit', sans-serif
 	--box-shadow-secondary: 0 10px 30px 0 rgba(44, 130, 237, 0.4);
 	--box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
 	--bg-gray: #e9f1ee;
-	--bg-gradient: linear-gradient(97deg, #49a760 50%, rgba(252,197,27,1) 100%);
+	--bg-gradient: linear-gradient(97deg, #32421f 50%, rgba(252,197,27,1) 100%);
 }
 
 
@@ -5639,7 +5639,7 @@ ul.list-disc {
 
 ul.list-disc li {
 	list-style: disc;
-	margin-top: 7px;
+	/* margin-top: 7px; */
 }
 
 .project-details-style-one img {
@@ -7374,6 +7374,7 @@ img.loader {
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center bottom;
+	background: #384a24;
 }
 
 .product-type-item .thumb {
@@ -7385,7 +7386,7 @@ img.loader {
     margin: auto auto 30px;
     position: relative;
     z-index: 1;
-    background: var(--white);
+    /* background: var(--white); */
 }
 
 .product-type-item .thumb img {
@@ -9980,7 +9981,7 @@ footer {
 	
 	.contact-bg {
 		transform: rotateZ(-180deg);
-	background: #181e10;
+	/* background: #181e10; */
     color: #ffffff;
 	text-transform: capitalize;
 	position: relative;
@@ -10010,7 +10011,12 @@ footer {
 	top: 80px;
 	z-index: 1111111111111111111111111;
 	}
-	
+	.contact-form input{
+		min-height: 40px;
+	}
+	.contact-form .form-group {
+		margin-bottom: 0.7rem;
+	}
 	.close-btn {
 	background: #32421f;
 	color: #fff !important;
@@ -10169,7 +10175,7 @@ button.btn {
 .blog-style-one .thumb ul li{
 	list-style-type: disc !important; 
 	color: #444444;
-    font-size: 19px;
+    font-size: 17px;
 }
 .modal-content {
     position: relative;
@@ -10279,6 +10285,7 @@ button.btn {
 .header-top-callus a:hover::before {
     background-color: #696CFF;
 }
+
 .whats-app{
 	display: block;
 }
@@ -10287,8 +10294,9 @@ button.btn {
     margin-left: -6%;
     text-align: left;
     margin-bottom: 10%;
+	z-index: 1111111111111;
 }
-.text-div2 h3 {
+.carousel-item h3 {
     font-size: 35px;
     color: #fff;
 	margin-bottom: 20px;
@@ -10305,9 +10313,10 @@ button.btn {
     margin-left: -6%;
     text-align: left;
     margin-bottom: 14%;
+	z-index: 1111111111111;
 }
 
-.text-div h3 {
+.carousel-item h3 {
     font-size: 35px;
     color: #fff;
 	margin-bottom: 30px;
@@ -10318,6 +10327,44 @@ button.btn {
     color: #fff;
     font-weight: 400;
 	
+}
+
+
+@media (max-width: 1200px) {
+
+	.carousel-item h3 {
+		font-size: 30px;
+	}
+
+}
+
+@media (max-width: 1100px) {
+	.text-div2{
+
+		margin-bottom: 0%;
+	}
+}
+
+@media (max-width: 991px) {
+
+	.carousel-item h3 {
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+	.text-div2 ul li{
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.carousel-item h3 {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+
+
 }
 
 
@@ -10348,11 +10395,14 @@ button.btn {
 		max-width: 720px;
 		width: 100%;
 	}
-	.text-div h3 {
-		font-size: 26px;
-		color: #fff;
-		margin-bottom: 30px;
+	.hero-btn-wrap a {
+
+		font-size: 14px;
 	}
+	.text-div {
+		margin-bottom: 5%;
+	}
+
 	.mobv{
 		display: none;
 	}
@@ -10360,13 +10410,9 @@ button.btn {
 		width: 45%;
 		margin-left: -4%;
 		text-align: left;
-		margin-bottom: 13%;
+		margin-bottom: 10%;
 	}
-	.text-div2 h3 {
-		font-size: 26px;
-		color: #fff;
-		margin-bottom: 30px;
-	}
+
 	.about-style-one-thumb::after {
 		position: absolute;
 		left: 50%;
@@ -10379,12 +10425,28 @@ button.btn {
 		z-index: -1;
 	}
 }
+.down-pdf-mob{
+	display: none !important;
+}
+
+@media (max-width: 600px) {
+.carousel-item h3 {
+	font-size: 18px;
+}
+ .hero-btn-wrap a {
+	font-size: 12px;
+}
+}
 @media (max-width: 480px) {
 	.text-div h3 {
 		font-size: 14px;
 		color: #fff;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		line-height: 20px;
+	}
+
+	.hero-btn-wrap a {
+		font-size: 10px;
 	}
 	.text-div {
 		width: 42%;
@@ -10393,9 +10455,9 @@ button.btn {
 		margin-bottom: -2%;
 	}
 	.text-div2 h3 {
-		font-size: 14px;
+		font-size: 15px;
 		color: #fff;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		line-height: 20px;
 	}
 	.text-div2 {
@@ -10430,10 +10492,37 @@ button.btn {
 		padding: 6px 14px;
 		color: #fff;
 		font-weight: 400;
-		font-size: 15px;
+		/* font-size: 15px; */
+	}
+	.down-pdf{
+		display: none;
+	}
+	.down-pdf-mob{
+		display: block !important;
+	}
+	
+}
+
+@media (max-width: 400px) {
+
+	.carousel-item h3 {
+		font-size: 12px;
+		margin-bottom: -1%;
+		/* margin-bottom: -3%; */
+	}
+	.hero-btn-wrap  {
+
+		/* margin-bottom: -20px; */
+	}
+	.callus b {
+		color: #fff;
+		font-weight: 400;
+		font-size: 12px;
 	}
 }
-@media (min-width: 1024px) {
+
+
+/* @media (max-width: 1024px) {
 
 	nav.navbar.navbar-style-one {
 		padding: 0;
@@ -10454,4 +10543,57 @@ button.btn {
 		line-height: 1.2;
 		color: var(--color-heading);
 	}
+	.text-div2 {
+		width: 42%;
+		margin-left: -6%;
+		text-align: left;
+		margin-bottom: 4%;
+	}
+} */
+.product-type-item h4 {
+	color: #fff;
 }
+.product-type-item p {
+    color: #dddddd;
+}
+
+         
+         
+.btn-grad {
+	background-image: linear-gradient(to right, #b8b846 0%, #32421f 51%, #32421f 100%);
+	/* margin: 10px; */
+	/* padding: 15px 45px; */
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;   
+	border-radius: 10px;
+	display: block;
+	box-shadow: 0 0 20px #32421f;
+  }
+
+  .btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    margin-left: -110px;
+}
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    margin-right: -90px;
+}
+ 
