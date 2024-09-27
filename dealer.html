@@ -411,13 +411,14 @@
             <div class="help-block with-errors"></div>
           </div>
           <div class="form-group">
-            <input id="phone" type="text" name="phone" class="form-control" placeholder="Your Phone No"
-              required="required" />
-          </div>
-          <div class="form-group">
             <input id="code" type="text" name="code" class="form-control" placeholder="Your Country code"
               required="required" />
           </div>
+          <div class="form-group">
+            <input id="phone" type="text" name="phone" class="form-control" placeholder="Your Phone No"
+              required="required" />
+          </div>
+         
           <div class="form-group">
             <textarea id="form_message1" name="message" class="form-control" placeholder="Your Message" rows="3"
               required="required" data-error="Please,leave us a message."></textarea>
@@ -461,6 +462,14 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
+                                    <input class="form-control" id="ccode" name="ccode" placeholder="Country Code*" type="text">
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
                                     <input class="form-control" id="phone" name="phone" placeholder="Mobile Number*" type="text">
                                     <span class="alert-error"></span>
                                 </div>
@@ -482,14 +491,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <input class="form-control" id="ccode" name="ccode" placeholder="Country Code*" type="text">
-                                    <span class="alert-error"></span>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group comments">
@@ -565,7 +567,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input class="form-control" id="phone" name="phone" placeholder="Mobile Number*" type="text">
+                                    <input class="form-control" id="concode" name="concode" placeholder="Country Code*" type="text">
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
@@ -573,11 +575,12 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input class="form-control" id="concode" name="concode" placeholder="Country Code*" type="text">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Mobile Number*" type="text">
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
                         </div>
+                        
                        
                         <div class="row">
                             <div class="col-lg-12">
