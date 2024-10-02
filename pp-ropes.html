@@ -62,6 +62,7 @@
     <link href="assets/css/shop.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <!-- ========== End Stylesheet ========== -->
@@ -649,41 +650,72 @@
             <img src="assets/img/shape/7.png" alt="">
         </div>
     </footer>
-    <a class="contact-btn btn-grad">
+     <a class="contact-btn btn-grad">
         <div class="contact-bg">Get &nbsp; Free&nbsp; Consultation</div>
       </a>
       <div class="contact-form text-black">
         <a class="close-btn text-capitalize text-end"><i class="fa fa-close"></i></a>
         <h2 class="title mb-3">Request A <span> Quote </span></h2>
-        <form id="" method="post" action="">
+        <form id="myForm1" action="" method="post" enctype="multipart/form-data">
           <div class="messages"></div>
           <div class="form-group">
-            <input id="form_name1" type="text" name="name" class="form-control" placeholder="Your Name" required="required"
+            <input id="name1" type="text" name="name" class="form-control" placeholder="Your Name" required="required"
               data-error="Name is required." />
             <div class="help-block with-errors"></div>
           </div>
           <div class="form-group">
-            <input id="email" type="email" name="email" class="form-control" placeholder="Your Email"
+            <input id="email1" type="email" name="email" class="form-control" placeholder="Your Email"
               required="required" data-error="Valid email is required." />
             <div class="help-block with-errors"></div>
           </div>
+          
           <div class="form-group">
-            <input id="code" type="text" name="code" class="form-control" placeholder="Your Country code"
-              required="required" />
-          </div>
-          <div class="form-group">
-            <input id="phone" type="text" name="phone" class="form-control" placeholder="Your Phone No"
+            <input type="text" id="dials1" name="dials1" class="form-control" placeholder="Your Phone No"
               required="required" />
           </div>
          
           <div class="form-group">
-            <textarea id="form_message1" name="message" class="form-control" placeholder="Your Message" rows="3"
+            <textarea id="message1" name="message" class="form-control" placeholder="Your Message" rows="3"
               required="required" data-error="Please,leave us a message."></textarea>
             <div class="help-block with-errors"></div>
           </div>
-          <button class="btn btn-border btn-radius pds-btn"><span>Submit Now</span></button>
+          <button class="btn btn-border btn-radius pds-btn" id="btn_submit"><span>Submit Now</span></button>
         </form>
       </div>
+
+     <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="">Download <span>Brochure</span></h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Please Enter your Email to Download <span>Brochure</span></h5>
+          <form id="myForm2" action="" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input id="email2" type="email" name="email2" class="form-control" placeholder="Enter Your Email"
+                        required="required" data-error="Valid email is required." />
+                      </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input type="text" id="dials2" name="dials2" class="form-control" placeholder="Enter Mobile Number"
+                        required="required" data-error="Valid Mob. No. is required." />
+                      </div>
+                </div>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="btn_submit2" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
     <!-- jQuery Frameworks
     ============================================= -->
@@ -705,37 +737,23 @@
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/SplitText.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+     <script>
+        $("#dials").intlTelInput({
+            initialCountry: "in",
 
- <!-- Modal -->
-   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="">Download <span>Brochure</span></h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h5>Please Enter your Email to Download <span>Brochure</span></h5>
-          <div class="row">
-            <div class="col-lg-6">
-                <div class="form-group">
-                    <input id="email" type="email" name="email" class="form-control" placeholder="Enter Your Email"
-                    required="required" data-error="Valid email is required." />
-                  </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="form-group">
-                    <input id="phone" type="phone" name="phone" class="form-control" placeholder="Enter Mobile Number"
-                    required="required" data-error="Valid Mob. No. is required." />
-                  </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit Now</button>
-         
-        </div>
-      </div>
-    </div>
-  </div>
+        });
+        $("#dials1").intlTelInput({
+            initialCountry: "in",
+
+        });
+        $("#dials2").intlTelInput({
+            initialCountry: "in",
+
+        });
+     </script>
+
+
+</body>
 </html>
